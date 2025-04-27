@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Results</title>
+</head>
+<body>
+    <h1>Your Quiz Results</h1>
+    {% for r in results %}
+        <p>Score: {{ r[2] }} | DateTime: {{ r[3] }}</p>
+    {% endfor %}
+    <a href="/quiz">Take More Quizzes</a> | <a href="/logout">Logout</a>
+</body>
+</html>
